@@ -42,7 +42,7 @@ def main():
 
     args = parser.parse_args()
 
-    # Определяем формат из расширения файла, если --output указан без --format
+    # Определяем формат
     output_format = args.format
     if args.output and args.format == 'text':
         if args.output.lower().endswith('.json'):
